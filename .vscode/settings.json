@@ -1,0 +1,11 @@
+{
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#b55fa4",
+    "titleBar.activeBackground": "#b55fa4",
+    "titleBar.inactiveBackground": "#b55fa4",
+    "statusBar.foreground": "#000",
+    "titleBar.inactiveForeground": "#000",
+    "titleBar.activeForeground": "#000",
+  },
+  "window.title": "PROJECT 4 FRONTEND"
+}
