@@ -4,6 +4,7 @@ import axios from 'axios'
 
 
 
+
 export default function Login() {
 
   const navigate = useNavigate()
@@ -37,6 +38,7 @@ export default function Login() {
   }
 
   return <div className="section">
+    <h2>Login</h2>
     <div className="container">
       <form onSubmit={handleSubmit}>
         <div className="field">

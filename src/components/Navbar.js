@@ -7,7 +7,7 @@ const NavBar = () => {
       <div className="navbar-end">
         <div className="navbar-item">
           <div className="buttons">
-            <Link to="/" className="button is-dark">
+            <Link to="/" className="button is-light">
               <strong>Home</strong>
             </Link>
             <Link to="/register" className="button is-light">
