@@ -46,58 +46,54 @@ export default function Register() {
   console.log(errors)
 
   return <div className="section">
+    <h2 className="title is-2 has-text-centered">
+      Register
+    </h2> 
+    <div className ="logo-image">
+      <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1659869556/Project_Pollinator_qfrxk5-c_scale_h_350_mqijxw.png' alt="logo" />
+    </div>       
     <div className="container">
-      <form onSubmit={handleSubmit}>
-        <div className="field">
-          <label className="label">Username</label>
-          <div className="control">
-            <input
-              className="input"
-              type="text"
-              name={'username'} 
-              value={formData.username}
-              onChange={handleChange}
-            />
+      <div className="box">
+        <form onSubmit={handleSubmit}>
+          <div className="field">
+            <label className="label">Username</label>
+            <div className="control">
+              <input
+                className="input"
+                type="text"
+                name={'username'} 
+                value={formData.username}
+                onChange={handleChange}
+              />
+            </div>
           </div>
-        </div>
-        <div className="field">
-          <label className="label">Email</label>
-          <div className="control">
-            <input
-              className="input"
-              type="text"
-              name={'email'}
-              value={formData.email}
-              onChange={handleChange}
-            />
+          <div className="field">
+            <label className="label">Email</label>
+            <div className="control">
+              <input
+                className="input"
+                type="text"
+                name={'email'}
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
           </div>
-        </div>
-        <div className="field">
-          <label className="label">Password</label>
-          <div className="control">
-            <input
-              className="input"
-              type="password"
-              name={'password'}
-              value={formData.password}
-              onChange={handleChange}
-            />
+          <div className="field">
+            <label className="label">Password</label>
+            <div className="control">
+              <input
+                className="input"
+                type="password"
+                name={'password'}
+                value={formData.password}
+                onChange={handleChange}
+              />
+            </div>
           </div>
-        </div>
-        {/* <div className="field">
-          <label className="label">Confirm password</label>
-          <div className="control">
-            <input
-              className="input"
-              type="password"
-              name={'passwordConfirmation'}
-              value={formData.passwordConfirmation}
-              onChange={handleChange}
-            />
-          </div>
-        </div> */}
-        <button className="button">Submit</button>
-      </form>
+          <button className="button">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 }
