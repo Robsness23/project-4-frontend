@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 export default function Register() {
+
+  const notify = () => toast()
   
   const navigate = useNavigate()
 
@@ -12,11 +16,7 @@ export default function Register() {
     email: "",
   })
 
-  const [errors, setErrors] = useState({
-    username: "",
-    password: "",
-    email: "",
-  })
+  const [errors, setErrors] = useState(false)
 
   function handleChange(e) {
     const { name, value } = e.target
@@ -24,26 +24,38 @@ export default function Register() {
       ...formData,
       [name]: value, 
     })
-    setErrors({
-      ...errors,
-      [name]: '',
-    })
+    setErrors(false)
   }
+  console.log(formData)
 
   async function handleSubmit(e) {
     e.preventDefault()
     console.log('Did I pass this error?')
 
     try {
-      await axios.post('/api/register', formData)
-      navigate('/login')
+      const { data }  = await axios.post('/api/register', formData)
+      console.log(data)
+      console.log(formData)
+      toast("You have successfully registered", {
+        className: "toast-success",
+        draggable: true,
+        position: toast.POSITION.TOP_CENTER,
+      })
+      setTimeout(() => {
+        navigate('/login');
+      }, "1500")
+     
     } catch (err) {
       console.log(err.response.data)
-
-      setErrors(err.response.data.errors)
+      toast("Registration Failed", {
+        className: "toast-error",
+        draggable: true,
+        position: toast.POSITION.TOP_CENTER,
+      })      
+      setErrors(true)
     }
   }
-  console.log(errors)
+  
 
   return <div className="section">
     <h2 className="title is-2 has-text-centered">
@@ -77,6 +89,7 @@ export default function Register() {
                 value={formData.email}
                 onChange={handleChange}
               />
+              {errors && <small className="text-has-danger">{"Hmmm, something isn't right here"}</small>}
             </div>
           </div>
           <div className="field">
@@ -91,7 +104,18 @@ export default function Register() {
               />
             </div>
           </div>
-          <button className="button">Submit</button>
+          <button className="button" onClick={notify}>Submit</button>
+          <ToastContainer 
+            position="top-center"
+            autoClose={1900}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
         </form>
       </div>
     </div>

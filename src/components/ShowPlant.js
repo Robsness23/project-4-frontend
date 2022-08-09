@@ -1,6 +1,6 @@
 import React from "react"
 import { useParams, Link, useNavigate } from "react-router-dom"
-import { loggedInUserId } from '../lib/auth'
+import { loggedInUserId, isCreator } from '../lib/auth'
 import axios from 'axios'
 import { baseUrl } from "../config"
 
@@ -59,7 +59,7 @@ function ShowPlant() {
                 <figure className="image">
                   <img src={plant.image} alt={plant.name} />
                 </figure>
-                {loggedInUserId() && <button
+                {isCreator(plant.user.id) && <button
                   className="button is-danger"
                   onClick={handleDelete}
                 >
@@ -140,8 +140,7 @@ function ShowPlant() {
                 </div>
               </article>
             })}
-
-            {console.log("loggedInUserId", loggedInUserId())}
+            
             {loggedInUserId() && <article className="media">
               <div className="media-content">
                 <div className="field">

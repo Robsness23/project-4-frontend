@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import { baseUrl } from '../config'
 
 function Plant({ name, image, id }) {
+  // const { plantId } = useParams()
   const [plant, setPlant] = React.useState([])
+  console.log(plant)
 
   React.useEffect(() => {
     const getData = async () => {
@@ -16,7 +18,7 @@ function Plant({ name, image, id }) {
 
   return ( 
     <div className="column is-one-quarter-desktop is-third-tablet is-half-mobile">  
-      <Link to={`/plants/${plant.id}`}>   
+      <Link to={`/plants/${id}`}>   
         <div className="card">
           <div className="card-image">
             <figure className="image">

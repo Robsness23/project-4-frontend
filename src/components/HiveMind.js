@@ -5,9 +5,13 @@ import Select from 'react-select'
 import { baseUrl } from "../config"
 import seasonTypes from '../data/seasonTypes'
 import pollinatorTypes from '../data/pollinatorTypes'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 
 function HiveMind() {
+
+  const notify = () => toast()
 
   const navigate = useNavigate()
 
@@ -84,14 +88,32 @@ function HiveMind() {
         headers: { Authorization: `Bearer ${token}` },
       })
       console.log(data.id)
-      navigate(`/plants/${data.id}`)
+      toast("What a great human you are!", {
+        className: "toast-success",
+        draggable: true,
+        position: toast.POSITION.TOP_CENTER,
+      })
+      setTimeout(() => {
+        navigate(`/plants/${data.id}`);
+      }, "1500")
     } catch (err) {
+      toast("Hmm, something has gone wrong", {
+        className: "toast-error",
+        draggable: true,
+        position: toast.POSITION.TOP_CENTER,
+      })
       console.log(err.response.data)
     }
   }
 
   return (
     <section className="section">
+      <h2 className="title is-2 has-text-centered">
+      Welcome to the Hive Mind
+      </h2> 
+      <div className ="logo-image">
+        <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1659869556/Project_Pollinator_qfrxk5-c_scale_h_350_mqijxw.png' alt="logo" />
+      </div>  
       <div className="container">
         <form onSubmit={handleSubmit}>
           {['name', 'latinName', 'description', "image"].map(field => {
@@ -137,7 +159,20 @@ function HiveMind() {
             value={formData.pollinators}
           />
 
-          <button className="button mt-5 is-success">Submit</button>
+          <div>
+            <button className="button mt-5 is-success" onClick={notify}>Submit</button>
+            <ToastContainer 
+              position="top-center"
+              autoClose={1900}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+            />   
+          </div>
         </form>
       </div>
     </section>

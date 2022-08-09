@@ -1,23 +1,16 @@
-
-
-$box-color: #ffb4a2; 
-$box-background-color: #363636;
-$box-radius: 6px;
-$box-padding: 1rem;
-
-@import "~bulma/bulma.sass";
-
 * {
   box-sizing: border-box;
-  color: #664885;
+  
 }
 
 h1 {
   font-family: 'Spectral', serif;
+  
 }
 
 h2{
   font-family: 'Spectral', serif;
+  
 }
 .logo-image {
   display: flex;
@@ -40,6 +33,7 @@ h2{
 
 .text-on-image{
   font-family: 'Spectral', serif;
+  
 }
 .head-image {
   width: 100%; 
@@ -55,8 +49,31 @@ h2{
 .box {
   max-width: 100%;
   font-family: 'Spectral', serif;
+  border-radius: 15px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(122, 48, 179, 0.181), 0 0px 0 1px rgba(42, 5, 76, 0.02);
+  color: #8b749a;
   
 }
 .card{
   font-family: 'Spectral', serif;
+  background-color: #8b749a;
 }
+
+.title.is-2 {
+  color: #8b749a;
+}
+
+.title.is-1 {
+  color: #8b749a;
+}
+
+.title.is-4 {
+  color: #8b749a;
+}
+
+.subtitle.is-6 {
+  color: #8b749a;
+}
+
+
+@import "~bulma/bulma.sass";

@@ -14,10 +14,6 @@ function NavBar() {
     localStorage.clear()
   }
 
-
-  
-  
-
   return (
     <>
       <header>
@@ -26,26 +22,26 @@ function NavBar() {
             <div className="navbar-end">
               <div className="navbar-item">
                 <div className="buttons">
-                  <Link to="/" className="button is-light">
-                    <strong>Home</strong>
+                  <Link to="/" className="button is-rounded">
+              Home
                   </Link>            
-                  <Link to='/nectarcafe' className="button is-light">
+                  <Link to='/nectarcafe' className="button is-rounded">
               Nectar Cafe 
                   </Link>
-                  <Link to='/plants' className="button is-light">
+                  <Link to='/plants' className="button is-rounded">
               All Plants
                   </Link>
                   <div className="navbar-end">
-                    {loggedIn && <Link to='/hivemind' className="button is-light">
+                    {loggedIn && <Link to='/hivemind' className="button is-rounded">
               Hive Mind 
                     </Link>}
-                    <Link to="/register" className="button is-light">
+                    <Link to="/register" className="button is-rounded">
               Register
                     </Link>
-                    {!loggedIn && <Link to="/login" className="button is-light">
+                    {!loggedIn && <Link to="/login" className="button is-rounded">
               Login
                     </Link>}
-                    {loggedIn && <Link to="/" className="button is-light"
+                    {loggedIn && <Link to="/" className="button is-rounded"
                       onClick={logOut}>
               Logout
                     </Link>}

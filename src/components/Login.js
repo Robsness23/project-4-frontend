@@ -2,35 +2,59 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { baseUrl } from '../config'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 
 export default function Login() {
+  
   const navigate = useNavigate()
   const [formData, setFormData] = useState({
     password: "",
     email: "",
   })
+
+  const [errors, setErrors] = useState(false)
+
   function handleChange(e) {
     const { name, value } = e.target
     setFormData({
       ...formData,
       [name]: value,
     })
+    setErrors(false)
   }
+
+  const notify = () => toast()
+
   async function handleSubmit(e) {
     e.preventDefault()
-    try {
+    try {      
       const { data } = await axios.post(`${baseUrl}/login`, formData)
       console.log(data)
+      console.log(formData)
       localStorage.setItem('token', data.token)
       localStorage.setItem('email', data.email)
-      navigate('/')
-      alert("You have successfully logged in")
-    } catch (err) {
-      console.log(err.response.data)
-      alert("Login failed")
+      toast("You have successfully logged in", {
+        className: "toast-success",
+        draggable: true,
+        position: toast.POSITION.TOP_CENTER,
+      })
+      setTimeout(() => {
+        navigate('/');
+      }, "1500")
+      
+    } catch (error) {
+      toast("Login Failed", {
+        className: "toast-error",
+        draggable: true,
+        position: toast.POSITION.TOP_CENTER,
+      })
+      setErrors(true)
+      console.log(error.response.data)
     }
   }
+  
 
   return <div className="section">
     <h2 className="title is-2 has-text-centered">
@@ -64,9 +88,23 @@ export default function Login() {
                 value={formData.password}
                 onChange={handleChange}
               />
+              {errors && <small className="text-has-text">{"Nah, something is wrong!"}</small>}
             </div>
           </div>
-          <button className="button">Login</button>
+          <div>
+            <button className="button" onClick={notify}>Login</button>
+            <ToastContainer 
+              position="top-center"
+              autoClose={1900}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+            />            
+          </div>
         </form>
       </div>
     </div>
