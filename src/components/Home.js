@@ -4,16 +4,7 @@ import React from 'react'
 import HomePlants from '../components/HomePlants'
 
 function Home() {
-  // const [plant, setPlant] = React.useState([])
-
-  // React.useEffect(() => {
-  //   const getHibiscus = async () => {
-  //     const res = await fetch(`${baseUrl}/plants`)
-  //     const json = await res.json()
-  //     setPlant(json)
-  //   }
-  //   getHibiscus()
-  // }, [])
+  
 
   return <section className="hero is-fullheight-with-navbar">
     <div className="hero-body">
@@ -36,33 +27,35 @@ function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> 
           </header>
+          <div className="box has-text-centered">
+            <div className="content is-medium">
+              <h3 className="title is-2 has-text-centered">Our Goals</h3>
+              <p>Our goals are simple really, we want to create a literal buzz. Our goal is to give everyone the tools and inspiration to set up <a href="api/nectarcafe">nectar cafes</a> in their gardens, whether you have a sprawling garden or balcony.
+               Our reasons? Well we reckon you would have been living under a rock (respect) to not know about the rapid decline in the bee population, the rapid decline of butterflies, even the rapid decline of the non-pretty bugs. It is all a bit …<strong>overwhelming and depressing?</strong> <br />
+              </p>
+            </div>
+          </div> 
           <HomePlants />
-          {/* {plant.map((plant, index) => {
-              return <div key={index} className="column is-one-quarter-desktop is-third-tablet is-half-mobile">
-                <Link to={`/plants/${plant.id}`}>
-                  <div className="card">
-                    <div className="card-content">
-                      <div className="media">
-                        <div className="media-content">
-                          <p className="title is-6">{plant.name}</p>
-                          <p className="subtitle is-8">{plant.latinName}</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-image">
-                      <figure className="image is-1by1">
-                        <img src={plant.image} alt={plant.name} />
-                      </figure>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            })} */}
+          <div className="box has-text-centered">
+            <div className="content is-medium">
+              <h3 className="title is-2 has-text-centered">Our Database</h3>
+              <p className="">Another goal is to create a <a href="api/hivemind">Hive Mind</a>, which is a ‘working database’. What is a ‘working database’, you ask. Well, we want to grow (our website, our goals and our impact) and we need your help! In order to collect as much data as possible we ask that everyone register and contribute plants that you know that attract pollinators.
+              Once you have set up your nectar cafe, please head over to our Hive Mind and add all the plants you know of! Add comments on other plants, tell us why they are special, tell us the pollinators that love them!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <footer className="footer">
+      <div className="content has-text-centered">
+        <p>
+          Project Pollinator by <a href="https://www.linkedin.com/in/robyn-smith-27187910b/">Robyn Smith</a>. The code is open-sourced and hosted on <a href="https://github.com/Robsness23">GitHub</a>.
+        </p>
+      </div>
+    </footer>
   </section>
 }
 

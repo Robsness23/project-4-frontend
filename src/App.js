@@ -7,6 +7,7 @@ import Register from './components/Register'
 import PlantIndex from './components/PlantIndex'
 import HiveMind from './components/HiveMind'
 import ShowPlant from './components/ShowPlant'
+import NectarCafe from './components/NectarCafe'
 // import Plant from './components/Plant'
 // import HomePlants from './components/HomePlants'
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/nectarcafe" element={<NectarCafe />} />
         <Route path="/plants" element={<PlantIndex />} /> 
         <Route path="/plants/:plantId" element={<ShowPlant />} /> 
         <Route path="/hivemind" element={<HiveMind />} />     
