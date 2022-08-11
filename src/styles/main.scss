@@ -12,6 +12,13 @@ h2{
   font-family: 'Spectral', serif;
   
 }
+h3{
+  font-family: 'Spectral', serif;
+}
+p{
+  font-family: 'Spectral', serif;
+}
+
 .logo-image {
   display: flex;
   flex-direction: row;
@@ -75,5 +82,9 @@ h2{
   color: #8b749a;
 }
 
-
+.flex-header{
+  display: flex;
+  flex-direction: row;
+  border: solid 1px red;
+}
 @import "~bulma/bulma.sass";

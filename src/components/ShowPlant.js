@@ -59,11 +59,12 @@ function ShowPlant() {
                 <figure className="image">
                   <img src={plant.image} alt={plant.name} />
                 </figure>
+                <br />
                 {isCreator(plant.user.id) && <button
-                  className="button is-danger"
+                  className="button is-warning is-light"
                   onClick={handleDelete}
-                >
-                  🪦 Delete Plant
+                > 
+                  Delete Plant
                 </button>}
                 {console.log("loggedInUserId", loggedInUserId())}
               </div>
@@ -140,7 +141,7 @@ function ShowPlant() {
                 </div>
               </article>
             })}
-            
+
             {loggedInUserId() && <article className="media">
               <div className="media-content">
                 <div className="field">
@@ -158,7 +159,7 @@ function ShowPlant() {
                 <div className="field">
                   <p className="control">
                     <button
-                      className="button is-link is-light"
+                      className="button is-warning is-light"
                       onClick={handleComment}
                     >
             Submit
@@ -173,8 +174,8 @@ function ShowPlant() {
         )}
       </div>
       <footer className="has-text-left">
-        <Link className="has-text-success-dark"
-          to="/plants">← Return to all plants</Link>
+        <button className="button is-warning is-light"><Link className="has-text-success-dark"
+          to="/plants">🌺 All plants</Link></button>
       </footer>
     </section>
   )

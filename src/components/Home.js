@@ -10,16 +10,18 @@ function Home() {
     <div className="hero-body">
       <div className="container">        
         <div className="columns is-multiline is-mobile">
-          <header>
-            <div className="head-text">
-              <div className="text-on-image">
-                <div className="column">
-                  <h3 className="title is-1 has-text-centered">...help us create a buzz</h3>
+          <section className="title-header">
+            <div className="flex-header">
+              <div className="head-text">
+                <div className="text-on-image">
+                  <div className="column">
+                    <h3 className="title is-1 has-text-centered">...help us create a buzz</h3>
+                  </div>
                 </div>
-              </div>
-              <div className="head-image">           
-                <div className="column is-mobile is-one-third">
-                  <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1659869556/Project_Pollinator_qfrxk5-c_scale_h_350_mqijxw.png' alt="logo" />
+                <div className="head-image">           
+                  <div className="column is-mobile is-one-third">
+                    <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1659869556/Project_Pollinator_qfrxk5-c_scale_h_350_mqijxw.png' alt="logo" />
+                  </div>
                 </div>
                 <div className="column is-mobile is-full">
                   <div className ="head-image">
@@ -28,7 +30,7 @@ function Home() {
                 </div>
               </div>
             </div> 
-          </header>
+          </section>
           <div className="box has-text-centered">
             <div className="content is-medium">
               <h3 className="title is-2 has-text-centered">Our Goals</h3>
@@ -36,12 +38,12 @@ function Home() {
                Our reasons? Well we reckon you would have been living under a rock (respect) to not know about the rapid decline in the bee population, the rapid decline of butterflies, even the rapid decline of the non-pretty bugs. It is all a bit …<strong>overwhelming and depressing?</strong> <br />
               </p>
             </div>
-          </div> 
+          </div>           
           <HomePlants />
           <div className="box has-text-centered">
             <div className="content is-medium">
               <h3 className="title is-2 has-text-centered">Our Database</h3>
-              <p className="">Another goal is to create a <a href="api/hivemind">Hive Mind</a>, which is a ‘working database’. What is a ‘working database’, you ask. Well, we want to grow (our website, our goals and our impact) and we need your help! In order to collect as much data as possible we ask that everyone register and contribute plants that you know that attract pollinators.
+              <p className="">Another goal is to create a <a href="api/hivemind">Hive Mind</a>, which is a working database. What is a ‘working database’, you ask. Well, we want to grow (our website, our goals and our impact) and we need your help! In order to collect as much data as possible we ask that everyone register and contribute plants that you know that attract pollinators.
               Once you have set up your nectar cafe, please head over to our Hive Mind and add all the plants you know of! Add comments on other plants, tell us why they are special, tell us the pollinators that love them!
               </p>
             </div>

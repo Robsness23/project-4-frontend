@@ -160,7 +160,8 @@ function HiveMind() {
           />
 
           <div>
-            <button className="button mt-5 is-success" onClick={notify}>Submit</button>
+            <br />
+            <button className="button is-warning is-light" onClick={notify}>Submit</button>
             <ToastContainer 
               position="top-center"
               autoClose={1900}

@@ -3,6 +3,7 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { baseUrl } from '../config'
 
 export default function Register() {
 
@@ -33,7 +34,7 @@ export default function Register() {
     console.log('Did I pass this error?')
 
     try {
-      const { data }  = await axios.post('/api/register', formData)
+      const { data }  = await axios.post(`${baseUrl}/register`, formData)
       console.log(data)
       console.log(formData)
       toast("You have successfully registered", {
@@ -104,7 +105,7 @@ export default function Register() {
               />
             </div>
           </div>
-          <button className="button" onClick={notify}>Submit</button>
+          <button className="button is-warning is-light" onClick={notify}>Submit</button>
           <ToastContainer 
             position="top-center"
             autoClose={1900}

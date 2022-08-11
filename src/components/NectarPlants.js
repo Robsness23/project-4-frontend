@@ -24,21 +24,22 @@ const responsive = {
   },
 };
 
-function HomePlants() {
+function NectarPlants() {
 
-  const [hibiscus, setHibiscus] = React.useState([])
+  const [cherry, setCherry] = React.useState([])
   const [verbena, setVerbena] = React.useState([])
   const [dahlia, setDahlia] = React.useState([])
   const [lavender, setLavender] = React.useState([])
 
   React.useEffect(() => {
-    const getHibiscus = async () => {
-      const res = await fetch(`${baseUrl}/plants/2`)
+    const getCherry = async () => {
+      const res = await fetch(`${baseUrl}/plants/17`)
       const json = await res.json()
-      setHibiscus(json)
+      setCherry(json)
     }
-    getHibiscus()
+    getCherry()
   }, [])
+  console.log(cherry)
 
   React.useEffect(() => {
     const getVerbena = async () => {
@@ -74,11 +75,11 @@ function HomePlants() {
       <section className="section">
         <div className="container">        
           <div className="columns is-mobile">
-            {hibiscus ? (            
+            {cherry ? (            
               <Plant
-                id={hibiscus.id}
-                name={hibiscus.name}                   
-                image={hibiscus.image}
+                id={cherry.id}
+                name={cherry.name}                   
+                image={cherry.image}
               />
             ) : (
               <p>Loading plant...</p>
@@ -122,4 +123,4 @@ function HomePlants() {
 
 }
 
-export default HomePlants
+export default NectarPlants

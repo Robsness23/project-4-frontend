@@ -92,7 +92,7 @@ export default function Login() {
             </div>
           </div>
           <div>
-            <button className="button" onClick={notify}>Login</button>
+            <button className="button is-warning is-light" onClick={notify}>Login</button>
             <ToastContainer 
               position="top-center"
               autoClose={1900}
