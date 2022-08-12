@@ -77,8 +77,11 @@ p{
 .title.is-4 {
   color: #8b749a;
 }
+.title.is-3 {
+  color: #8b749a;
+}
 
-.subtitle.is-6 {
+.subtitle.is-5 {
   color: #8b749a;
 }
 
@@ -87,4 +90,5 @@ p{
   flex-direction: row;
   border: solid 1px red;
 }
+
 @import "~bulma/bulma.sass";

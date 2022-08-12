@@ -23,13 +23,13 @@ function Home() {
                     <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1659869556/Project_Pollinator_qfrxk5-c_scale_h_350_mqijxw.png' alt="logo" />
                   </div>
                 </div>
-                <div className="column is-mobile is-full">
-                  <div className ="head-image">
-                    <img src = {require('../images/pexels-irina-iriser-1533470.jpg')} alt = "Bee" />
-                  </div>
-                </div>
+              </div> 
+            </div>
+            <div className="column is-mobile is-full">
+              <div className ="head-image">
+                <img src = {require('../images/pexels-irina-iriser-1533470.jpg')} alt = "Bee" />
               </div>
-            </div> 
+            </div>
           </section>
           <div className="box has-text-centered">
             <div className="content is-medium">

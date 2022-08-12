@@ -26,33 +26,33 @@ const responsive = {
 
 function NectarPlants() {
 
-  const [cherry, setCherry] = React.useState([])
-  const [verbena, setVerbena] = React.useState([])
+  const [calendula, setCalendula] = React.useState([])
+  const [rose, setRose] = React.useState([])  
   const [dahlia, setDahlia] = React.useState([])
-  const [lavender, setLavender] = React.useState([])
+  const [chive, setChive] = React.useState([])
 
   React.useEffect(() => {
-    const getCherry = async () => {
-      const res = await fetch(`${baseUrl}/plants/17`)
+    const getCalendula = async () => {
+      const res = await fetch(`${baseUrl}/plants/4`)
       const json = await res.json()
-      setCherry(json)
+      setCalendula(json)
     }
-    getCherry()
+    getCalendula()
   }, [])
-  console.log(cherry)
 
   React.useEffect(() => {
-    const getVerbena = async () => {
-      const res = await fetch(`${baseUrl}/plants/14`)
+    const getRose = async () => {
+      const res = await fetch(`${baseUrl}/plants/23`)
       const json = await res.json()
-      setVerbena(json)
+      setRose(json)
     }
-    getVerbena()
+    getRose()
   }, [])
+  console.log(rose)
 
   React.useEffect(() => {
     const getDahlia = async () => {
-      const res = await fetch(`${baseUrl}/plants/16`)
+      const res = await fetch(`${baseUrl}/plants/19`)
       const json = await res.json()
       setDahlia(json)
     }
@@ -60,12 +60,12 @@ function NectarPlants() {
   }, [])
 
   React.useEffect(() => {
-    const getLavender = async () => {
-      const res = await fetch(`${baseUrl}/plants/1`)
+    const getChive = async () => {
+      const res = await fetch(`${baseUrl}/plants/17`)
       const json = await res.json()
-      setLavender(json)
+      setChive(json)
     }
-    getLavender()
+    getChive()
   }, [])
 
   return (  
@@ -75,20 +75,20 @@ function NectarPlants() {
       <section className="section">
         <div className="container">        
           <div className="columns is-mobile">
-            {cherry ? (            
+            {rose ? (            
               <Plant
-                id={cherry.id}
-                name={cherry.name}                   
-                image={cherry.image}
+                id={rose.id}
+                name={rose.name}                   
+                image={rose.image}
               />
             ) : (
               <p>Loading plant...</p>
             )}
-            {verbena ? (
+            {calendula ? (
               <Plant
-                id={verbena.id}
-                name={verbena.name}
-                image={verbena.image}
+                id={calendula.id}
+                name={calendula.name}
+                image={calendula.image}
               />
             ) : (
               <p>Loading plant...</p>
@@ -102,11 +102,11 @@ function NectarPlants() {
             ) : (
               <p>Loading plant...</p>
             )}
-            {lavender ? (
+            {chive ? (
               <Plant
-                id={lavender.id}
-                name={lavender.name}
-                image={lavender.image}
+                id={chive.id}
+                name={chive.name}
+                image={chive.image}
               />
             ) : (
               <p>Loading plant...</p>

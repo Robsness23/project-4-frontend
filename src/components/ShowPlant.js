@@ -159,7 +159,7 @@ function ShowPlant() {
                 <div className="field">
                   <p className="control">
                     <button
-                      className="button is-warning is-light"
+                      className="button is-warning is-light is-responsive"
                       onClick={handleComment}
                     >
             Submit
@@ -174,7 +174,8 @@ function ShowPlant() {
         )}
       </div>
       <footer className="has-text-left">
-        <button className="button is-warning is-light"><Link className="has-text-success-dark"
+        <br />
+        <button className="button is-warning is-light is-responsive"><Link className="has-text-success-dark"
           to="/plants">🌺 All plants</Link></button>
       </footer>
     </section>

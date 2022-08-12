@@ -5,11 +5,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 
 const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
@@ -26,14 +21,23 @@ const responsive = {
 
 function HomePlants() {
 
+  const [primrose, setPrimrose] = React.useState([])
   const [hibiscus, setHibiscus] = React.useState([])
-  const [verbena, setVerbena] = React.useState([])
-  const [dahlia, setDahlia] = React.useState([])
+  const [honeysuckle, setHoneysuckle] = React.useState([])
   const [lavender, setLavender] = React.useState([])
 
   React.useEffect(() => {
+    const getPrimrose = async () => {
+      const res = await fetch(`${baseUrl}/plants/3`)
+      const json = await res.json()
+      setPrimrose(json)
+    }
+    getPrimrose()
+  }, [])
+
+  React.useEffect(() => {
     const getHibiscus = async () => {
-      const res = await fetch(`${baseUrl}/plants/2`)
+      const res = await fetch(`${baseUrl}/plants/18`)
       const json = await res.json()
       setHibiscus(json)
     }
@@ -41,21 +45,12 @@ function HomePlants() {
   }, [])
 
   React.useEffect(() => {
-    const getVerbena = async () => {
-      const res = await fetch(`${baseUrl}/plants/14`)
+    const getHoneysuckle = async () => {
+      const res = await fetch(`${baseUrl}/plants/5`)
       const json = await res.json()
-      setVerbena(json)
+      setHoneysuckle(json)
     }
-    getVerbena()
-  }, [])
-
-  React.useEffect(() => {
-    const getDahlia = async () => {
-      const res = await fetch(`${baseUrl}/plants/16`)
-      const json = await res.json()
-      setDahlia(json)
-    }
-    getDahlia()
+    getHoneysuckle()
   }, [])
 
   React.useEffect(() => {
@@ -74,29 +69,29 @@ function HomePlants() {
       <section className="section">
         <div className="container">        
           <div className="columns is-mobile">
-            {hibiscus ? (            
+            {primrose ? (            
+              <Plant
+                id={primrose.id}
+                name={primrose.name}                   
+                image={primrose.image}
+              />
+            ) : (
+              <p>Loading plant...</p>
+            )}
+            {hibiscus ? (
               <Plant
                 id={hibiscus.id}
-                name={hibiscus.name}                   
+                name={hibiscus.name}
                 image={hibiscus.image}
               />
             ) : (
               <p>Loading plant...</p>
             )}
-            {verbena ? (
+            {honeysuckle ? (
               <Plant
-                id={verbena.id}
-                name={verbena.name}
-                image={verbena.image}
-              />
-            ) : (
-              <p>Loading plant...</p>
-            )}
-            {dahlia ? (
-              <Plant
-                id={dahlia.id}
-                name={dahlia.name}
-                image={dahlia.image}
+                id={honeysuckle.id}
+                name={honeysuckle.name}
+                image={honeysuckle.image}
               />
             ) : (
               <p>Loading plant...</p>
