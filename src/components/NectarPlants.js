@@ -26,18 +26,18 @@ const responsive = {
 
 function NectarPlants() {
 
-  const [calendula, setCalendula] = React.useState([])
+  const [thyme, setThyme] = React.useState([])
   const [rose, setRose] = React.useState([])  
   const [dahlia, setDahlia] = React.useState([])
   const [chive, setChive] = React.useState([])
 
   React.useEffect(() => {
-    const getCalendula = async () => {
-      const res = await fetch(`${baseUrl}/plants/4`)
+    const getThyme = async () => {
+      const res = await fetch(`${baseUrl}/plants/2`)
       const json = await res.json()
-      setCalendula(json)
+      setThyme(json)
     }
-    getCalendula()
+    getThyme()
   }, [])
 
   React.useEffect(() => {
@@ -84,11 +84,11 @@ function NectarPlants() {
             ) : (
               <p>Loading plant...</p>
             )}
-            {calendula ? (
+            {thyme ? (
               <Plant
-                id={calendula.id}
-                name={calendula.name}
-                image={calendula.image}
+                id={thyme.id}
+                name={thyme.name}
+                image={thyme.image}
               />
             ) : (
               <p>Loading plant...</p>
