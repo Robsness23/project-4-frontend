@@ -14,21 +14,22 @@ function NectarCafe() {
           <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1659869556/Project_Pollinator_qfrxk5-c_scale_h_350_mqijxw.png' alt="logo" />
         </div>   
         <br />
-        <h2 className="title is-3 has-text-centered">Designing your Cafe</h2>
-        <div>      
-          <div className="box">
+        <div className="box">
+          <h2 className="title is-3 has-text-centered">Designing your Cafe</h2>
+          <div>      
+          
             <p className="subtitle is-5 has-text-centered">
-        🔸 Choose a sheltered sunny spot 🔸 <br />
-        🔸 Place plants in groups so that the colour and scent are easy to detect 🔸 <br />
-        🔸 Select plants that you know have a show of flowers from early spring to late autumn 🔸<br />
-        🔸 Remember to provide a night-time feast for moths, plant some night-scented flowers 🔸<br />
-        🔸 Many herbs are highly attractive to insects, so add them into the mix, or design a dedicated herb garden 🔸</p>
+              1.  Choose a sheltered sunny spot<br />
+              2.  Place plants in groups so that the colour and scent are easy to detect<br />
+              3.  Select plants that you know have a show of flowers from early spring to late autumn<br />
+              4.  Remember to provide a night-time feast for moths, plant some night-scented flowers<br />
+              5.  Many herbs are highly attractive to insects, so add them into the mix, or design a dedicated herb garden</p>
           </div>
         </div>
       </div>
 
 
-      <div className="section">
+      <div className="box">
         <h3 className="title is-3 has-text-centered">Choosing your Plants</h3>        
         <NectarPlants />
         <div className="has-text-right">
@@ -38,9 +39,8 @@ function NectarCafe() {
         </div>        
       </div>
 
-      <h2 className="title is-3 has-text-centered">Pollinator-Friendly Pest Control</h2>
-
-      <section className="section">
+      <div className="box">  
+        <h2 className="title is-3 has-text-centered">Pollinator-Friendly Pest Control</h2>
         <div className="container"> 
           <div className="mb-6 columns is-multiline is-responsive">
             <div className="column is-one-quarter-desktop is-responsive">
@@ -57,10 +57,9 @@ function NectarCafe() {
                         <p className="title is-4">Ladybirds</p>
                       </div>
                     </div>
-                    {/* <div clasName="content">
-      Ladybirds are pro Aphid-eaters. You might be wondering where you could get a good dozen of them to help out with an Aphid infestation. Amazon!
-                    
-                    </div> */}
+                    <div className="content">
+                      Ladybirds are pro Aphid-eaters. You might be wondering where you could get a good dozen of them to help out with an Aphid infestation. Amazon!                    
+                    </div>
                   </div>
                 </div>
               </a>
@@ -77,13 +76,12 @@ function NectarCafe() {
                   <div className="card-content">
                     <div className="media">
                       <div className="media-content">
-                        <p className="title is-4">Apple Cider Vinegar</p>
+                        <p className="title is-4">Apple Cider Vinegar Solution</p>
                       </div>
                     </div>
-                    {/* <div className="content">
-                Gnats will be attracted to the apple cider vinegar because of its sweet smell and taste.
-                    
-                    </div> */}
+                    <div className="content">
+                      Gnats will be attracted to the apple cider vinegar because of its sweet smell and taste.                    
+                    </div>
                   </div>
                 </div>
               </a>
@@ -104,10 +102,9 @@ function NectarCafe() {
                         <p className="title is-4">Decoy Trap Plants</p>
                       </div>
                     </div>
-                    {/* <div className="content">
-                Trap crops are decoy plants to lure agricultural pests, away from the main crop affected by pests! Nasturtiums are amazing decoy plants!
-                    
-                    </div> */}
+                    <div className="content">
+                      Trap crops are decoy plants to lure agricultural pests, away from the main crop affected by pests! Nasturtiums are amazing decoy plants!                    
+                    </div>
                   </div>
                 </div>
               </a>
@@ -127,113 +124,115 @@ function NectarCafe() {
                         <p className="title is-4">H20 Blast</p>
                       </div>
                     </div>
-                    {/* <div className="content">
+                    <div className="content">
                 A quick burst of water from your water hose or its nozzle is usually forceful enough to put a stop to a light infestation of aphids on leaves. 
                     
-                    </div> */}
+                    </div>
                   </div>
                 </div>
               </a>
             </div>
+            
 
 
           </div>
         </div>
-      </section>
+      </div>
+      <div className="box">
+        <h2 className="title is-3 has-text-centered">Companies to Support</h2>
 
-      <h2 className="title is-3 has-text-centered">Companies that Inspire Us</h2>
-
-      <section className="section">
-        <div className="container">      
-          <div className="mb-6 columns is-multiline is-responsive">     
+        <section className="section">
+          <div className="container">      
+            <div className="mb-6 columns is-multiline is-responsive">     
 
             
-            <div className="column is-one-quarter-desktop is-responsive">
-              <a target="_blank" rel="noreferrer" href="https://www.beehotels.co.za/">
-                <div className="card"> 
-                  <div className="card-image">
-                    <figure className="image">                      
-                      <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660165582/Screenshot_2022-08-10_at_21.58.58_j9ju9h.png" alt="Tutus Loco" />
-                    </figure>
-                  </div>
-                  <div className="card-content">
-                    <div className="media">
-                      <div className="media-content">
-                        <strong>Tutus Loco</strong> - check out this family-run company which makes beautiful bee hotels for solitary bees. 
-                        <a target="_blank" rel="noreferrer" href="https://www.beehotels.co.za/"></a>
+              <div className="column is-one-quarter-desktop is-responsive">
+                <a target="_blank" rel="noreferrer" href="https://www.beehotels.co.za/">
+                  <div className="card"> 
+                    <div className="card-image">
+                      <figure className="image">                      
+                        <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660165582/Screenshot_2022-08-10_at_21.58.58_j9ju9h.png" alt="Tutus Loco" />
+                      </figure>
+                    </div>
+                    <div className="card-content">
+                      <div className="media">
+                        <div className="media-content">
+                          <strong>Tutus Loco</strong> - check out this family-run company which makes beautiful bee hotels for solitary bees. 
+                          <a target="_blank" rel="noreferrer" href="https://www.beehotels.co.za/"></a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
             
             
-            <div className="column is-one-quarter-desktop is-responsive">
-              <a target="_blank" rel="noreferrer" href="https://beehappyplants.co.uk/">
-                <div className="card"> 
-                  <div className="card-image">
-                    <figure className="image">
-                      <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660316318/Screenshot_2022-08-12_at_15.58.29_v8jzgy.png" alt="Bee Happy Plants" />
-                    </figure>
-                  </div>
-                  <div className="card-content">
-                    <div className="media">
-                      <div className="media-content">
-                        <strong>Bee Happy Plants & Seeds</strong> - they sell organic seed kits designed to bring more pollinators to your yard!
-                        <a target="_blank" rel="noreferrer" href="https://beehappyplants.co.uk/"></a>
+              <div className="column is-one-quarter-desktop is-responsive">
+                <a target="_blank" rel="noreferrer" href="https://beehappyplants.co.uk/">
+                  <div className="card"> 
+                    <div className="card-image">
+                      <figure className="image">
+                        <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660316318/Screenshot_2022-08-12_at_15.58.29_v8jzgy.png" alt="Bee Happy Plants" />
+                      </figure>
+                    </div>
+                    <div className="card-content">
+                      <div className="media">
+                        <div className="media-content">
+                          <strong>Bee Happy Plants & Seeds</strong> - they sell organic seed kits designed to bring more pollinators to your yard!
+                          <a target="_blank" rel="noreferrer" href="https://beehappyplants.co.uk/"></a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a> 
-            </div>
+                </a> 
+              </div>
 
 
-            <div className="column is-one-quarter-desktop is-responsive">
-              <a target="_blank" rel="noreferrer" href="https://www.meandthebees.com/">
-                <div className="card"> 
-                  <div className="card-image">
-                    <figure className="image">
-                      <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660377815/Screenshot_2022-08-13_at_09.03.27_zdwj4n.png" alt="Me & The Bees" />
-                    </figure>
-                  </div>
-                  <div className="card-content">
-                    <div className="media">
-                      <div className="media-content">
-                        <strong>Me and The Bees</strong> - a lemonade company with the sweetest of stories!
-                        <a target="_blank" rel="noreferrer" href="https://www.meandthebees.com/"></a>
+              <div className="column is-one-quarter-desktop is-responsive">
+                <a target="_blank" rel="noreferrer" href="https://www.meandthebees.com/">
+                  <div className="card"> 
+                    <div className="card-image">
+                      <figure className="image">
+                        <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660377815/Screenshot_2022-08-13_at_09.03.27_zdwj4n.png" alt="Me & The Bees" />
+                      </figure>
+                    </div>
+                    <div className="card-content">
+                      <div className="media">
+                        <div className="media-content">
+                          <strong>Me and The Bees</strong> - a lemonade company with the sweetest of stories!
+                          <a target="_blank" rel="noreferrer" href="https://www.meandthebees.com/"></a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a> 
-            </div>
+                </a> 
+              </div>
 
-            <div className="column is-one-quarter-desktop is-responsive">
-              <a target="_blank" rel="noreferrer" href="https://www.burtsbees.co.uk/">
-                <div className="card"> 
-                  <div className="card-image">
-                    <figure className="image">
-                      <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660378172/Screenshot_2022-08-13_at_09.09.25_kkc4na.png" alt="Burt's Bees" />
-                    </figure>
-                  </div>
-                  <div className="card-content">
-                    <div className="media">
-                      <div className="media-content">
-                        <strong>Burts Bees</strong> - the funds they have poured into protecting bees is amazing!
-                        <a target="_blank" rel="noreferrer" href="https://www.burtsbees.co.uk/"></a>
+              <div className="column is-one-quarter-desktop is-responsive">
+                <a target="_blank" rel="noreferrer" href="https://www.burtsbees.co.uk/">
+                  <div className="card"> 
+                    <div className="card-image">
+                      <figure className="image">
+                        <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660378172/Screenshot_2022-08-13_at_09.09.25_kkc4na.png" alt="Burt's Bees" />
+                      </figure>
+                    </div>
+                    <div className="card-content">
+                      <div className="media">
+                        <div className="media-content">
+                          <strong>Burts Bees</strong> - the funds they have poured into protecting bees is amazing!
+                          <a target="_blank" rel="noreferrer" href="https://www.burtsbees.co.uk/"></a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a> 
-            </div>
+                </a> 
+              </div>
           
             
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   </div>
 }

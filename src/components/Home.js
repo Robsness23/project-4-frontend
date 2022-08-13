@@ -35,7 +35,7 @@ function Home() {
           <div className="box has-text-centered">
             <div className="content is-medium">
               <h3 className="title is-2 has-text-centered">Our Goals</h3>
-              <p>Our goals are simple really, we want to create a literal buzz. Our goal is to give everyone the tools and inspiration to set up <a href="api/nectarcafe">nectar cafes</a> in their gardens, whether you have a sprawling garden or balcony.
+              <p>Our goals are simple really, we want to create a literal buzz. Our goal is to give everyone the tools and inspiration to set up <a href="https://project-pollinator.netlify.app/nectarcafe">nectar cafes</a> in their gardens, whether you have a sprawling garden or balcony.
                Our reasons? Well we reckon you would have been living under a rock to not know about the rapid decline in the bee population, the rapid decline of butterflies, even the rapid decline of the non-pretty bugs. It is all a bit …<strong>overwhelming and depressing?</strong> <br />
               </p>
             </div>
@@ -44,7 +44,7 @@ function Home() {
           <div className="box has-text-centered">
             <div className="content is-medium">
               <h3 className="title is-2 has-text-centered">Our Database</h3>
-              <p className="">Another goal is to create a <a href="api/hivemind">Hive Mind</a>, which is a working database. What is a ‘working database’, you ask. Well, we want to grow (our website, our goals and our impact) and we need your help! In order to collect as much data as possible we ask that everyone register and contribute plants that you know that attract pollinators.
+              <p className="">Another goal is to create a <a href="https://project-pollinator.netlify.app/hivemind">Hive Mind</a>, which is a working database. What is a ‘working database’, you ask. Well, we want to grow (our website, our goals and our impact) and we need your help! In order to collect as much data as possible we ask that everyone register and contribute plants that you know that attract pollinators.
               Once you have set up your nectar cafe, please head over to our Hive Mind and add all the plants you know of! Add comments on other plants, tell us why they are special, tell us the pollinators that love them!
               </p>
             </div>
