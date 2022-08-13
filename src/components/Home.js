@@ -3,6 +3,7 @@ import React from 'react'
 // import { baseUrl } from '../config'
 import HomePlants from '../components/HomePlants'
 
+
 function Home() {
   
 

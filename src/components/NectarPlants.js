@@ -1,28 +1,28 @@
 import React from 'react'
 import Plant from '../components/Plant'
 import { baseUrl } from '../config'
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from 'react-responsive-carousel'
+// import "react-responsive-carousel/lib/styles/carousel.min.css"
+// import { Carousel } from 'react-responsive-carousel'
 
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 400, min: 0 },
-    items: 1,
-  },
-};
+// const responsive = {
+//   superLargeDesktop: {
+//     // the naming can be any, depends on you.
+//     breakpoint: { max: 4000, min: 3000 },
+//     items: 5,
+//   },
+//   desktop: {
+//     breakpoint: { max: 3000, min: 1024 },
+//     items: 3,
+//   },
+//   tablet: {
+//     breakpoint: { max: 1024, min: 464 },
+//     items: 2,
+//   },
+//   mobile: {
+//     breakpoint: { max: 400, min: 0 },
+//     items: 1,
+//   },
+// };
 
 function NectarPlants() {
 
@@ -69,54 +69,54 @@ function NectarPlants() {
   }, [])
 
   return (  
-    <Carousel autoPlay
-      responsive={responsive}   
-    >
-      <section className="section">
-        <div className="container">        
-          <div className="columns is-mobile">
-            {rose ? (            
-              <Plant
-                id={rose.id}
-                name={rose.name}                   
-                image={rose.image}
-              />
-            ) : (
-              <p>Loading plant...</p>
-            )}
-            {thyme ? (
-              <Plant
-                id={thyme.id}
-                name={thyme.name}
-                image={thyme.image}
-              />
-            ) : (
-              <p>Loading plant...</p>
-            )}
-            {dahlia ? (
-              <Plant
-                id={dahlia.id}
-                name={dahlia.name}
-                image={dahlia.image}
-              />
-            ) : (
-              <p>Loading plant...</p>
-            )}
-            {chive ? (
-              <Plant
-                id={chive.id}
-                name={chive.name}
-                image={chive.image}
-              />
-            ) : (
-              <p>Loading plant...</p>
-            )}
+    // <Carousel autoPlay
+    //   responsive={responsive}   
+    // >
+    <section className="section">
+      <div className="container">        
+        <div className="columns is-mobile">
+          {rose ? (            
+            <Plant
+              id={rose.id}
+              name={rose.name}                   
+              image={rose.image}
+            />
+          ) : (
+            <p>Loading plant...</p>
+          )}
+          {thyme ? (
+            <Plant
+              id={thyme.id}
+              name={thyme.name}
+              image={thyme.image}
+            />
+          ) : (
+            <p>Loading plant...</p>
+          )}
+          {dahlia ? (
+            <Plant
+              id={dahlia.id}
+              name={dahlia.name}
+              image={dahlia.image}
+            />
+          ) : (
+            <p>Loading plant...</p>
+          )}
+          {chive ? (
+            <Plant
+              id={chive.id}
+              name={chive.name}
+              image={chive.image}
+            />
+          ) : (
+            <p>Loading plant...</p>
+          )}
                    
-          </div>   
+        </div>   
          
-        </div>
-      </section>
-    </Carousel> 
+      </div>
+    </section>
+    // </Carousel> 
     
   )
 

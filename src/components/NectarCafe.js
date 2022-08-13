@@ -42,7 +42,7 @@ function NectarCafe() {
 
       <section className="section">
         <div className="container"> 
-          <div className="mb-6 columns is-multiline">
+          <div className="mb-6 columns is-multiline is-responsive">
             <div className="column is-one-quarter-desktop is-third-tablet is-half-mobile">
               <div className="card">
                 <div className="card-image">
@@ -137,26 +137,25 @@ function NectarCafe() {
 
       <section className="section">
         <div className="container">      
-          <div className="mb-6 columns is-multiline">     
+          <div className="mb-6 columns is-multiline is-responsive">     
 
             
             <div className="column is-one-quarter-desktop is-third-tablet is-half-mobile">
               <a target="_blank" rel="noreferrer" href="https://www.beehotels.co.za/">
                 <div className="card"> 
                   <div className="card-image">
-                    <figure className="image">
-                      
+                    <figure className="image">                      
                       <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660165582/Screenshot_2022-08-10_at_21.58.58_j9ju9h.png" alt="Tutus Loco" />
                     </figure>
                   </div>
-                  <div className="card-content">
+                  {/* <div className="card-content">
                     <div className="media">
                       <div className="media-content">
                         <strong>Tutus Loco</strong> - check out this family-run company which makes beautiful bee hotels for solitary bees. 
                         <a target="_blank" rel="noreferrer" href="https://www.beehotels.co.za/"></a>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </a>
             </div>
@@ -170,14 +169,14 @@ function NectarCafe() {
                       <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660316318/Screenshot_2022-08-12_at_15.58.29_v8jzgy.png" alt="Bee Happy Plants" />
                     </figure>
                   </div>
-                  <div className="card-content">
+                  {/* <div className="card-content">
                     <div className="media">
                       <div className="media-content">
                         <strong>Bee Happy Plants & Seeds</strong> - they sell organic seed kits designed to bring more pollinators to your yard!
                         <a target="_blank" rel="noreferrer" href="https://beehappyplants.co.uk/"></a>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </a> 
             </div>
@@ -191,14 +190,14 @@ function NectarCafe() {
                       <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660377815/Screenshot_2022-08-13_at_09.03.27_zdwj4n.png" alt="Me & The Bees" />
                     </figure>
                   </div>
-                  <div className="card-content">
+                  {/* <div className="card-content">
                     <div className="media">
                       <div className="media-content">
                         <strong>Me and The Bees</strong> - a lemonade company with the sweetest of stories!
                         <a target="_blank" rel="noreferrer" href="https://www.meandthebees.com/"></a>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </a> 
             </div>
@@ -211,14 +210,14 @@ function NectarCafe() {
                       <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660378172/Screenshot_2022-08-13_at_09.09.25_kkc4na.png" alt="Burt's Bees" />
                     </figure>
                   </div>
-                  <div className="card-content">
+                  {/* <div className="card-content">
                     <div className="media">
                       <div className="media-content">
                         <strong>Burts Bees</strong> - the funds they have poured into protecting bees is amazing!
                         <a target="_blank" rel="noreferrer" href="https://www.burtsbees.co.uk/"></a>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </a> 
             </div>
