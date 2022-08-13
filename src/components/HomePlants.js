@@ -1,24 +1,7 @@
 import React from 'react'
 import Plant from '../components/Plant'
 import { baseUrl } from '../config'
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-// import { Carousel } from 'react-responsive-carousel'
-// import CarouselSlider from "react-carousel-slider"
 
-// const responsive = {
-//   desktop: {
-//     breakpoint: { max: 3000, min: 1024 },
-//     items: 3,
-//   },
-//   tablet: {
-//     breakpoint: { max: 1024, min: 464 },
-//     items: 2,
-//   },
-//   mobile: {
-//     breakpoint: { max: 400, min: 0 },
-//     items: 1,
-//   },
-// };
 
 function HomePlants() {
 
@@ -64,9 +47,6 @@ function HomePlants() {
   }, [])
 
   return (  
-    // <Carousel autoPlay
-    //   responsive={responsive}   
-    // >
     <section className="section">
       <div className="container">        
         <div className="columns is-mobile">
@@ -111,7 +91,6 @@ function HomePlants() {
          
       </div>
     </section>
-    // </Carousel> 
     
   )
 
