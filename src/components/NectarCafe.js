@@ -16,30 +16,32 @@ function NectarCafe() {
         <br />
         <h2 className="title is-3 has-text-centered">Designing your Cafe</h2>
         <div>      
-          <p className="subtitle is-5 has-text-centered">
+          <div className="box">
+            <p className="subtitle is-5 has-text-centered">
         🔸 Choose a sheltered sunny spot 🔸 <br />
         🔸 Place plants in groups so that the colour and scent are easy to detect 🔸 <br />
         🔸 Select plants that you know have a show of flowers from early spring to late autumn 🔸<br />
         🔸 Remember to provide a night-time feast for moths, plant some night-scented flowers 🔸<br />
         🔸 Many herbs are highly attractive to insects, so add them into the mix, or design a dedicated herb garden 🔸</p>
+          </div>
         </div>
       </div>
 
 
       <div className="section">
-        <h3 className="title is-3 has-text-centered">Choosing your Plants</h3>
+        <h3 className="title is-3 has-text-centered">Choosing your Plants</h3>        
         <NectarPlants />
         <div className="has-text-right">
           <button 
             className="button is-warning is-light"><Link
               to="/plants">🌺 See all Plants</Link></button>
-        </div>
+        </div>        
       </div>
 
       <h2 className="title is-3 has-text-centered">Pollinator-Friendly Pest Control</h2>
 
       <section className="section">
-        <div className="container">        
+        <div className="container"> 
           <div className="mb-6 columns is-multiline">
             <div className="column is-one-quarter-desktop is-third-tablet is-half-mobile">
               <div className="card">
@@ -83,6 +85,7 @@ function NectarCafe() {
               </div>
             </div>
 
+
             <div className="column is-one-quarter-desktop is-third-tablet is-half-mobile">
               <div className="card">
                 <div className="card-image">
@@ -114,7 +117,7 @@ function NectarCafe() {
                 <div className="card-content">
                   <div className="media">
                     <div className="media-content">
-                      <p className="title is-4">A H20 Blast</p>
+                      <p className="title is-4">H20 Blast</p>
                     </div>
                   </div>
                   <div className="content">
@@ -185,13 +188,13 @@ function NectarCafe() {
                 <div className="card"> 
                   <div className="card-image">
                     <figure className="image">
-                      <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660316989/Screenshot_2022-08-12_at_16.09.42_fiuu67.png" alt="Me & The Bees" />
+                      <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660377815/Screenshot_2022-08-13_at_09.03.27_zdwj4n.png" alt="Me & The Bees" />
                     </figure>
                   </div>
                   <div className="card-content">
                     <div className="media">
                       <div className="media-content">
-                        <strong>Me & The Bees</strong> - a lemonade company with the sweetest of stories!
+                        <strong>Me and The Bees</strong> - a lemonade company with the sweetest of stories!
                         <a target="_blank" rel="noreferrer" href="https://www.meandthebees.com/"></a>
                       </div>
                     </div>
@@ -205,13 +208,13 @@ function NectarCafe() {
                 <div className="card"> 
                   <div className="card-image">
                     <figure className="image">
-                      <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660317460/Screenshot_2022-08-12_at_16.17.01_jigisf.png" alt="Me & The Bees" />
+                      <img src="https://res.cloudinary.com/dlxbte5xh/image/upload/v1660378172/Screenshot_2022-08-13_at_09.09.25_kkc4na.png" alt="Burt's Bees" />
                     </figure>
                   </div>
                   <div className="card-content">
                     <div className="media">
                       <div className="media-content">
-                        <strong>Burt's Bees</strong> - a lemonade company with the sweetest of stories!
+                        <strong>Burts Bees</strong> - the funds they have poured into protecting bees is amazing!
                         <a target="_blank" rel="noreferrer" href="https://www.burtsbees.co.uk/"></a>
                       </div>
                     </div>
@@ -224,9 +227,6 @@ function NectarCafe() {
           </div>
         </div>
       </section>
-     
-
-
     </div>
   </div>
 }

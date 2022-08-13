@@ -14,7 +14,7 @@ function Home() {
             <div className="flex-header">
               <div className="head-text">
                 <div className="text-on-image">
-                  <div className="column">
+                  <div className="column is-mobile is-two-thirds">
                     <h3 className="title is-1 has-text-centered">...help us create a buzz</h3>
                   </div>
                 </div>
@@ -25,7 +25,7 @@ function Home() {
                 </div>
               </div> 
             </div>
-            <div className="column is-mobile is-full">
+            <div className="row is-mobile is-full">
               <div className ="head-image">
                 <img src = {require('../images/pexels-irina-iriser-1533470.jpg')} alt = "Bee" />
               </div>
@@ -35,7 +35,7 @@ function Home() {
             <div className="content is-medium">
               <h3 className="title is-2 has-text-centered">Our Goals</h3>
               <p>Our goals are simple really, we want to create a literal buzz. Our goal is to give everyone the tools and inspiration to set up <a href="api/nectarcafe">nectar cafes</a> in their gardens, whether you have a sprawling garden or balcony.
-               Our reasons? Well we reckon you would have been living under a rock (respect) to not know about the rapid decline in the bee population, the rapid decline of butterflies, even the rapid decline of the non-pretty bugs. It is all a bit …<strong>overwhelming and depressing?</strong> <br />
+               Our reasons? Well we reckon you would have been living under a rock to not know about the rapid decline in the bee population, the rapid decline of butterflies, even the rapid decline of the non-pretty bugs. It is all a bit …<strong>overwhelming and depressing?</strong> <br />
               </p>
             </div>
           </div>           

@@ -72,6 +72,10 @@ p{
 
 .title.is-1 {
   color: #8b749a;
+  display: flex;
+  flex-direction: column;
+
+  
 }
 
 .title.is-4 {
@@ -87,8 +91,14 @@ p{
 
 .flex-header{
   display: flex;
-  flex-direction: row;
-  border: solid 1px red;
+  flex-direction: column;
+  // border: solid 1px red;
+}
+
+.title.is-1 {
+  color: #8b749a;
+  display: flex;
+  flex-direction: row-reverse;  
 }
 
 // .section{
