@@ -10,13 +10,13 @@ function Home() {
   return <section className="hero is-fullheight-with-navbar">
     <div className="hero-body">
       <div className="container">        
-        <div className="columns is-multiline is-mobile">
+        <div className="columns is-multiline is-responsive">
           <section className="title-header">
             <div className="flex-header">
               <div className="column is-one-quarter is-mobile">
                 <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1659869556/Project_Pollinator_qfrxk5-c_scale_h_350_mqijxw.png' alt="logo" />
               </div>
-              <div className="column is-mobile">
+              <div className="column is-responsive">
                 <h3 className="title is-1 has-text-centered">...help us create a buzz</h3>
               </div>
             </div>
