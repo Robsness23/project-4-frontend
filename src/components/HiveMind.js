@@ -88,7 +88,7 @@ function HiveMind() {
         headers: { Authorization: `Bearer ${token}` },
       })
       console.log(data.id)
-      toast("What a great human you are!", {
+      toast("Thank you, our database in growing!", {
         className: "toast-success",
         draggable: true,
         position: toast.POSITION.TOP_CENTER,
