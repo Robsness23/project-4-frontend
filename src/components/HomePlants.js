@@ -49,7 +49,7 @@ function HomePlants() {
   return (  
     <section className="section">
       <div className="container">        
-        <div className="columns is-mobile">
+        <div className="columns is-multiline is-mobile">
           {primrose ? (            
             <Plant
               id={primrose.id}

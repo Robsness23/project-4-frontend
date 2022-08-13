@@ -91,19 +91,29 @@ p{
 
 .flex-header{
   display: flex;
-  flex-direction: column;
-  // border: solid 1px red;
+  flex-direction: row;
+  
 }
 
 .title.is-1 {
   color: #8b749a;
   
 }
+h3.title.is-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 60px;
+}
 
 .content{
   color: #8b749a;
 }
-
+// .img{
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+// }
 
 // .section{
 //   border: solid 1px blue;

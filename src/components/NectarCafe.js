@@ -10,9 +10,6 @@ function NectarCafe() {
         <h1 className="title is-1 has-text-centered">
       Nectar Cafe
         </h1>
-        <div className ="logo-image">
-          <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1659869556/Project_Pollinator_qfrxk5-c_scale_h_350_mqijxw.png' alt="logo" />
-        </div>   
         <br />
         <div className="box">
           <h2 className="title is-3 has-text-centered">Designing your Cafe</h2>

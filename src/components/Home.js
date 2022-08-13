@@ -13,18 +13,12 @@ function Home() {
         <div className="columns is-multiline is-mobile">
           <section className="title-header">
             <div className="flex-header">
-              <div className="head-text">
-                <div className="text-on-image">
-                  <div className="column is-mobile is-two-thirds">
-                    <h3 className="title is-1 has-text-centered">...help us create a buzz</h3>
-                  </div>
-                </div>
-                <div className="head-image">           
-                  <div className="column is-mobile is-one-third">
-                    <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1659869556/Project_Pollinator_qfrxk5-c_scale_h_350_mqijxw.png' alt="logo" />
-                  </div>
-                </div>
-              </div> 
+              <div className="column is-one-quarter is-mobile">
+                <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1659869556/Project_Pollinator_qfrxk5-c_scale_h_350_mqijxw.png' alt="logo" />
+              </div>
+              <div className="column is-mobile">
+                <h3 className="title is-1 has-text-centered">...help us create a buzz</h3>
+              </div>
             </div>
             <div className="row is-mobile is-full">
               <div className ="head-image">

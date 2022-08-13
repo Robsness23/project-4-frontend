@@ -49,7 +49,7 @@ function NectarPlants() {
   return (  
     <section className="section">
       <div className="container">
-        <div className="columns is-multiline is-responsive">       
+        <div className="columns is-multiline is-mobile">       
           {/* <div className="column is-one-quarter-desktop is-third-tablet is-half-mobile"> */}
           {rose ? (            
             <Plant
