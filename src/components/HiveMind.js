@@ -112,8 +112,10 @@ function HiveMind() {
       Welcome to the Hive Mind
       </h2> 
       <div className ="logo-image">
-        <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1659869556/Project_Pollinator_qfrxk5-c_scale_h_350_mqijxw.png' alt="logo" />
-      </div>  
+        <a rel="noreferrer" href="https://project-pollinator.netlify.app/">        
+          <img src='https://res.cloudinary.com/dlxbte5xh/image/upload/v1659869556/Project_Pollinator_qfrxk5-c_scale_h_350_mqijxw.png' alt="logo" />
+        </a>
+      </div>   
       <div className="container">
         <form onSubmit={handleSubmit}>
           {['name', 'latinName', 'description', "image"].map(field => {
