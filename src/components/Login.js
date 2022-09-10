@@ -42,7 +42,7 @@ export default function Login() {
       })
       setTimeout(() => {
         navigate('/');
-      }, "1500")
+      }, "2100")
       
     } catch (error) {
       toast("Login Failed", {
@@ -97,7 +97,7 @@ export default function Login() {
             <button className="button is-warning is-light" onClick={notify}>Login</button>
             <ToastContainer 
               position="top-center"
-              autoClose={1900}
+              autoClose={2000}
               hideProgressBar={false}
               newestOnTop={false}
               closeOnClick
